@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3420E741B20A51000958E4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3420E731B20A51000958E4A /* AppDelegate.swift */; };
+		F3420E761B20A51000958E4A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3420E751B20A51000958E4A /* ProfileViewController.swift */; };
+		F3420E791B20A51000958E4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3420E771B20A51000958E4A /* Main.storyboard */; };
+		F3420E7B1B20A51000958E4A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3420E7A1B20A51000958E4A /* Images.xcassets */; };
+		F3420E7E1B20A51000958E4A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3420E7C1B20A51000958E4A /* LaunchScreen.xib */; };
+		F3420E8A1B20A51000958E4A /* SelfieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3420E891B20A51000958E4A /* SelfieTests.swift */; };
+		F3420E9A1B20CCD300958E4A /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3420E941B20CCD300958E4A /* CameraViewController.m */; };
+		F3420E9B1B20CCD300958E4A /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3420E971B20CCD300958E4A /* FilterViewController.m */; };
+		F3420E9C1B20CCD300958E4A /* FilterCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3420E991B20CCD300958E4A /* FilterCollectionViewCell.m */; };
+		F3420EA21B20D05100958E4A /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3420EA11B20D05100958E4A /* FeedTableViewController.swift */; };
+		F3420EA41B20D07300958E4A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3420EA31B20D07300958E4A /* WelcomeViewController.swift */; };
+		F3420EA61B20D08F00958E4A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3420EA51B20D08F00958E4A /* LoginViewController.swift */; };
+		F3420EA81B20D0B300958E4A /* SubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3420EA71B20D0B300958E4A /* SubmitViewController.swift */; };
+		F3420EAA1B20D11800958E4A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3420EA91B20D11800958E4A /* RegisterViewController.swift */; };
+		F3420EB01B20D55E00958E4A /* FeedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3420EAF1B20D55E00958E4A /* FeedTableViewCell.m */; };
+		F3420EB31B20D5D700958E4A /* SelfieCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3420EB21B20D5D700958E4A /* SelfieCollectionViewCell.m */; };
+		F3420EB61B20D66300958E4A /* PrettyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3420EB51B20D66300958E4A /* PrettyButton.swift */; };
+		F3420EB81B20D68500958E4A /* PrettyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3420EB71B20D68500958E4A /* PrettyField.swift */; };
+		F3420EBA1B20D6C200958E4A /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3420EB91B20D6C200958E4A /* AvatarView.swift */; };
+		F3420EBC1B20D75900958E4A /* StarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3420EBB1B20D75900958E4A /* StarButton.swift */; };
+		F3EA15EB1B20F5E50011383B /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3EA15EA1B20F5E50011383B /* Bolts.framework */; };
+		F3EA15ED1B20F5FE0011383B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3EA15EC1B20F5FE0011383B /* Parse.framework */; };
+		F3EA15EF1B20F66A0011383B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3EA15EE1B20F66A0011383B /* AudioToolbox.framework */; };
+		F3EA15F11B20F69E0011383B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3EA15F01B20F69E0011383B /* CFNetwork.framework */; };
+		F3EA15F31B20F6AB0011383B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3EA15F21B20F6AB0011383B /* CoreGraphics.framework */; };
+		F3EA15F51B20F6B60011383B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3EA15F41B20F6B60011383B /* CoreLocation.framework */; };
+		F3EA15F71B20F6C00011383B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3EA15F61B20F6C00011383B /* MobileCoreServices.framework */; };
+		F3EA15F91B20F6CC0011383B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3EA15F81B20F6CC0011383B /* QuartzCore.framework */; };
+		F3EA15FB1B20F6D70011383B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3EA15FA1B20F6D70011383B /* Security.framework */; };
+		F3EA15FD1B20F6E00011383B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3EA15FC1B20F6E00011383B /* StoreKit.framework */; };
+		F3EA15FF1B20F6EB0011383B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3EA15FE1B20F6EB0011383B /* SystemConfiguration.framework */; };
+		F3EA16011B20F6FC0011383B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F3EA16001B20F6FC0011383B /* libz.dylib */; };
+		F3EA16031B20F70D0011383B /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F3EA16021B20F70D0011383B /* libsqlite3.dylib */; };
+		F3EA16051B21E8580011383B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA16041B21E8580011383B /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3420E841B20A51000958E4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3420E661B20A50F00958E4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3420E6D1B20A51000958E4A;
+			remoteInfo = Selfie;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F3420E6E1B20A51000958E4A /* Selfie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Selfie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3420E721B20A51000958E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3420E731B20A51000958E4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F3420E751B20A51000958E4A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F3420E781B20A51000958E4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3420E7A1B20A51000958E4A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F3420E7D1B20A51000958E4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F3420E831B20A51000958E4A /* SelfieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelfieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3420E881B20A51000958E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3420E891B20A51000958E4A /* SelfieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieTests.swift; sourceTree = "<group>"; };
+		F3420E931B20CCD200958E4A /* Selfie-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Selfie-Bridging-Header.h"; sourceTree = "<group>"; };
+		F3420E941B20CCD300958E4A /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		F3420E951B20CCD300958E4A /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		F3420E961B20CCD300958E4A /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
+		F3420E971B20CCD300958E4A /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
+		F3420E981B20CCD300958E4A /* FilterCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterCollectionViewCell.h; sourceTree = "<group>"; };
+		F3420E991B20CCD300958E4A /* FilterCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterCollectionViewCell.m; sourceTree = "<group>"; };
+		F3420EA11B20D05100958E4A /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		F3420EA31B20D07300958E4A /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		F3420EA51B20D08F00958E4A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F3420EA71B20D0B300958E4A /* SubmitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitViewController.swift; sourceTree = "<group>"; };
+		F3420EA91B20D11800958E4A /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		F3420EAE1B20D55E00958E4A /* FeedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedTableViewCell.h; sourceTree = "<group>"; };
+		F3420EAF1B20D55E00958E4A /* FeedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedTableViewCell.m; sourceTree = "<group>"; };
+		F3420EB11B20D5D700958E4A /* SelfieCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfieCollectionViewCell.h; sourceTree = "<group>"; };
+		F3420EB21B20D5D700958E4A /* SelfieCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfieCollectionViewCell.m; sourceTree = "<group>"; };
+		F3420EB51B20D66300958E4A /* PrettyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrettyButton.swift; sourceTree = "<group>"; };
+		F3420EB71B20D68500958E4A /* PrettyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrettyField.swift; sourceTree = "<group>"; };
+		F3420EB91B20D6C200958E4A /* AvatarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		F3420EBB1B20D75900958E4A /* StarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarButton.swift; sourceTree = "<group>"; };
+		F3EA15E91B20F13A0011383B /* Smart Talk.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Smart Talk.ttf"; sourceTree = "<group>"; };
+		F3EA15EA1B20F5E50011383B /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		F3EA15EC1B20F5FE0011383B /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		F3EA15EE1B20F66A0011383B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F3EA15F01B20F69E0011383B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F3EA15F21B20F6AB0011383B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F3EA15F41B20F6B60011383B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F3EA15F61B20F6C00011383B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F3EA15F81B20F6CC0011383B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F3EA15FA1B20F6D70011383B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F3EA15FC1B20F6E00011383B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		F3EA15FE1B20F6EB0011383B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F3EA16001B20F6FC0011383B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		F3EA16021B20F70D0011383B /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		F3EA16041B21E8580011383B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3420E6B1B20A51000958E4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3EA16031B20F70D0011383B /* libsqlite3.dylib in Frameworks */,
+				F3EA16011B20F6FC0011383B /* libz.dylib in Frameworks */,
+				F3EA15FF1B20F6EB0011383B /* SystemConfiguration.framework in Frameworks */,
+				F3EA15FD1B20F6E00011383B /* StoreKit.framework in Frameworks */,
+				F3EA15FB1B20F6D70011383B /* Security.framework in Frameworks */,
+				F3EA15F91B20F6CC0011383B /* QuartzCore.framework in Frameworks */,
+				F3EA15F71B20F6C00011383B /* MobileCoreServices.framework in Frameworks */,
+				F3EA15F51B20F6B60011383B /* CoreLocation.framework in Frameworks */,
+				F3EA15F31B20F6AB0011383B /* CoreGraphics.framework in Frameworks */,
+				F3EA15F11B20F69E0011383B /* CFNetwork.framework in Frameworks */,
+				F3EA15EF1B20F66A0011383B /* AudioToolbox.framework in Frameworks */,
+				F3EA15ED1B20F5FE0011383B /* Parse.framework in Frameworks */,
+				F3EA15EB1B20F5E50011383B /* Bolts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3420E801B20A51000958E4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3420E651B20A50F00958E4A = {
+			isa = PBXGroup;
+			children = (
+				F3420E701B20A51000958E4A /* Selfie */,
+				F3420E861B20A51000958E4A /* SelfieTests */,
+				F3420E6F1B20A51000958E4A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3420E6F1B20A51000958E4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3420E6E1B20A51000958E4A /* Selfie.app */,
+				F3420E831B20A51000958E4A /* SelfieTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3420E701B20A51000958E4A /* Selfie */ = {
+			isa = PBXGroup;
+			children = (
+				F3420EB41B20D62F00958E4A /* IBDesignable */,
+				F3420EA01B20CD2D00958E4A /* Login Flow */,
+				F3420E9F1B20CD1E00958E4A /* Selfie Feed */,
+				F3420E9E1B20CD0A00958E4A /* Profile */,
+				F3420E9D1B20CCE900958E4A /* New Selfie Flow */,
+				F3420E771B20A51000958E4A /* Main.storyboard */,
+				F3420E711B20A51000958E4A /* Supporting Files */,
+				F3420E931B20CCD200958E4A /* Selfie-Bridging-Header.h */,
+			);
+			path = Selfie;
+			sourceTree = "<group>";
+		};
+		F3420E711B20A51000958E4A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3420E731B20A51000958E4A /* AppDelegate.swift */,
+				F3EA15EC1B20F5FE0011383B /* Parse.framework */,
+				F3EA15EA1B20F5E50011383B /* Bolts.framework */,
+				F3420E7C1B20A51000958E4A /* LaunchScreen.xib */,
+				F3EA16021B20F70D0011383B /* libsqlite3.dylib */,
+				F3EA16001B20F6FC0011383B /* libz.dylib */,
+				F3EA15FE1B20F6EB0011383B /* SystemConfiguration.framework */,
+				F3EA15FC1B20F6E00011383B /* StoreKit.framework */,
+				F3EA15FA1B20F6D70011383B /* Security.framework */,
+				F3EA15F81B20F6CC0011383B /* QuartzCore.framework */,
+				F3EA15F61B20F6C00011383B /* MobileCoreServices.framework */,
+				F3EA15F41B20F6B60011383B /* CoreLocation.framework */,
+				F3EA15F21B20F6AB0011383B /* CoreGraphics.framework */,
+				F3EA15F01B20F69E0011383B /* CFNetwork.framework */,
+				F3EA15EE1B20F66A0011383B /* AudioToolbox.framework */,
+				F3420E7A1B20A51000958E4A /* Images.xcassets */,
+				F3EA15E91B20F13A0011383B /* Smart Talk.ttf */,
+				F3420E721B20A51000958E4A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F3420E861B20A51000958E4A /* SelfieTests */ = {
+			isa = PBXGroup;
+			children = (
+				F3420E891B20A51000958E4A /* SelfieTests.swift */,
+				F3420E871B20A51000958E4A /* Supporting Files */,
+			);
+			path = SelfieTests;
+			sourceTree = "<group>";
+		};
+		F3420E871B20A51000958E4A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3420E881B20A51000958E4A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F3420E9D1B20CCE900958E4A /* New Selfie Flow */ = {
+			isa = PBXGroup;
+			children = (
+				F3420E941B20CCD300958E4A /* CameraViewController.m */,
+				F3420EA71B20D0B300958E4A /* SubmitViewController.swift */,
+				F3420E951B20CCD300958E4A /* CameraViewController.h */,
+				F3420E961B20CCD300958E4A /* FilterViewController.h */,
+				F3420E971B20CCD300958E4A /* FilterViewController.m */,
+				F3420EAB1B20D46E00958E4A /* Views */,
+				F3420E981B20CCD300958E4A /* FilterCollectionViewCell.h */,
+				F3420E991B20CCD300958E4A /* FilterCollectionViewCell.m */,
+			);
+			name = "New Selfie Flow";
+			sourceTree = "<group>";
+		};
+		F3420E9E1B20CD0A00958E4A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F3420E751B20A51000958E4A /* ProfileViewController.swift */,
+				F3420EAD1B20D4B200958E4A /* Views */,
+				F3420EB11B20D5D700958E4A /* SelfieCollectionViewCell.h */,
+				F3420EB21B20D5D700958E4A /* SelfieCollectionViewCell.m */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		F3420E9F1B20CD1E00958E4A /* Selfie Feed */ = {
+			isa = PBXGroup;
+			children = (
+				F3420EA11B20D05100958E4A /* FeedTableViewController.swift */,
+				F3420EAC1B20D49200958E4A /* Views */,
+			);
+			name = "Selfie Feed";
+			sourceTree = "<group>";
+		};
+		F3420EA01B20CD2D00958E4A /* Login Flow */ = {
+			isa = PBXGroup;
+			children = (
+				F3420EA31B20D07300958E4A /* WelcomeViewController.swift */,
+				F3420EA51B20D08F00958E4A /* LoginViewController.swift */,
+				F3420EA91B20D11800958E4A /* RegisterViewController.swift */,
+			);
+			name = "Login Flow";
+			sourceTree = "<group>";
+		};
+		F3420EAB1B20D46E00958E4A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F3420EAC1B20D49200958E4A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F3420EAE1B20D55E00958E4A /* FeedTableViewCell.h */,
+				F3420EAF1B20D55E00958E4A /* FeedTableViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F3420EAD1B20D4B200958E4A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F3420EB41B20D62F00958E4A /* IBDesignable */ = {
+			isa = PBXGroup;
+			children = (
+				F3420EB51B20D66300958E4A /* PrettyButton.swift */,
+				F3EA16041B21E8580011383B /* Constants.swift */,
+				F3420EB71B20D68500958E4A /* PrettyField.swift */,
+				F3420EB91B20D6C200958E4A /* AvatarView.swift */,
+				F3420EBB1B20D75900958E4A /* StarButton.swift */,
+			);
+			name = IBDesignable;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3420E6D1B20A51000958E4A /* Selfie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3420E8D1B20A51000958E4A /* Build configuration list for PBXNativeTarget "Selfie" */;
+			buildPhases = (
+				F3420E6A1B20A51000958E4A /* Sources */,
+				F3420E6B1B20A51000958E4A /* Frameworks */,
+				F3420E6C1B20A51000958E4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Selfie;
+			productName = Selfie;
+			productReference = F3420E6E1B20A51000958E4A /* Selfie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F3420E821B20A51000958E4A /* SelfieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3420E901B20A51000958E4A /* Build configuration list for PBXNativeTarget "SelfieTests" */;
+			buildPhases = (
+				F3420E7F1B20A51000958E4A /* Sources */,
+				F3420E801B20A51000958E4A /* Frameworks */,
+				F3420E811B20A51000958E4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3420E851B20A51000958E4A /* PBXTargetDependency */,
+			);
+			name = SelfieTests;
+			productName = SelfieTests;
+			productReference = F3420E831B20A51000958E4A /* SelfieTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3420E661B20A50F00958E4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Aimee Bragg";
+				TargetAttributes = {
+					F3420E6D1B20A51000958E4A = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					F3420E821B20A51000958E4A = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = F3420E6D1B20A51000958E4A;
+					};
+				};
+			};
+			buildConfigurationList = F3420E691B20A50F00958E4A /* Build configuration list for PBXProject "Selfie" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3420E651B20A50F00958E4A;
+			productRefGroup = F3420E6F1B20A51000958E4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3420E6D1B20A51000958E4A /* Selfie */,
+				F3420E821B20A51000958E4A /* SelfieTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3420E6C1B20A51000958E4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3420E791B20A51000958E4A /* Main.storyboard in Resources */,
+				F3420E7E1B20A51000958E4A /* LaunchScreen.xib in Resources */,
+				F3420E7B1B20A51000958E4A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3420E811B20A51000958E4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3420E6A1B20A51000958E4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3420EB81B20D68500958E4A /* PrettyField.swift in Sources */,
+				F3EA16051B21E8580011383B /* Constants.swift in Sources */,
+				F3420EBC1B20D75900958E4A /* StarButton.swift in Sources */,
+				F3420E9A1B20CCD300958E4A /* CameraViewController.m in Sources */,
+				F3420EB01B20D55E00958E4A /* FeedTableViewCell.m in Sources */,
+				F3420EAA1B20D11800958E4A /* RegisterViewController.swift in Sources */,
+				F3420EA21B20D05100958E4A /* FeedTableViewController.swift in Sources */,
+				F3420EB31B20D5D700958E4A /* SelfieCollectionViewCell.m in Sources */,
+				F3420E9C1B20CCD300958E4A /* FilterCollectionViewCell.m in Sources */,
+				F3420E761B20A51000958E4A /* ProfileViewController.swift in Sources */,
+				F3420EA81B20D0B300958E4A /* SubmitViewController.swift in Sources */,
+				F3420EB61B20D66300958E4A /* PrettyButton.swift in Sources */,
+				F3420EA61B20D08F00958E4A /* LoginViewController.swift in Sources */,
+				F3420E9B1B20CCD300958E4A /* FilterViewController.m in Sources */,
+				F3420E741B20A51000958E4A /* AppDelegate.swift in Sources */,
+				F3420EBA1B20D6C200958E4A /* AvatarView.swift in Sources */,
+				F3420EA41B20D07300958E4A /* WelcomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3420E7F1B20A51000958E4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3420E8A1B20A51000958E4A /* SelfieTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3420E851B20A51000958E4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3420E6D1B20A51000958E4A /* Selfie */;
+			targetProxy = F3420E841B20A51000958E4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F3420E771B20A51000958E4A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3420E781B20A51000958E4A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F3420E7C1B20A51000958E4A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3420E7D1B20A51000958E4A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3420E8B1B20A51000958E4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F3420E8C1B20A51000958E4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3420E8E1B20A51000958E4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Selfie",
+				);
+				INFOPLIST_FILE = Selfie/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Selfie/Selfie-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F3420E8F1B20A51000958E4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Selfie",
+				);
+				INFOPLIST_FILE = Selfie/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Selfie/Selfie-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		F3420E911B20A51000958E4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SelfieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Selfie.app/Selfie";
+			};
+			name = Debug;
+		};
+		F3420E921B20A51000958E4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SelfieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Selfie.app/Selfie";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3420E691B20A50F00958E4A /* Build configuration list for PBXProject "Selfie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3420E8B1B20A51000958E4A /* Debug */,
+				F3420E8C1B20A51000958E4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3420E8D1B20A51000958E4A /* Build configuration list for PBXNativeTarget "Selfie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3420E8E1B20A51000958E4A /* Debug */,
+				F3420E8F1B20A51000958E4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3420E901B20A51000958E4A /* Build configuration list for PBXNativeTarget "SelfieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3420E911B20A51000958E4A /* Debug */,
+				F3420E921B20A51000958E4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3420E661B20A50F00958E4A /* Project object */;
+}
